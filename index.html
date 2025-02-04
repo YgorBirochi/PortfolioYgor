@@ -7,6 +7,7 @@
     <link rel="icon" href="assets/img/logo.png">
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -25,7 +26,7 @@
     <main>
         <section id="home" class="perfil">
             <div class="perfil-texto">
-                <h1>Olá, eu sou o<br><span>Ygor Birochi</span></h1>
+                <h1>Olá, eu sou o<br><span id="nome-digitar"></span></h1>
                 <p>Desenvolvedor Full Stack criando experiências digitais inovadoras.</p>
             </div>
             <div class="perfil-img">
@@ -41,9 +42,12 @@
             e Jogos, sempre focado na inovação e eficiência.</p>
         </section>
 
-        <section id="projetos" class="projetos">
-            <h2>Projetos</h2>
-            <div class="grid">
+        <section id="projetos" class="projetos animate-on-scroll">
+    <h2>Projetos</h2>
+    <div class="carousel-container">
+        <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="carousel">
+            <div class="carousel-track">
                 <figure>
                     <a href="assets/img/Dog-Dodooi.jpg" target="_blank">
                         <img src="assets/img/Dog-Dodooi.jpg" alt="Projeto 1">
@@ -104,7 +108,12 @@
                     </figcaption>
                 </figure>
             </div>
-        </section>
+        </div>
+        <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+</section>
+
+        
     </main>
     <footer id="contato">
         <div class="social">
