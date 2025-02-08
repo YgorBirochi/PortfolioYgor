@@ -5,120 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Portfólio - Ygor B</title>
     <link rel="icon" href="assets/img/logo.png">
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/style2.css">
+    <!-- <link rel="stylesheet" href="assets/style/style.css"> Fazendo novas configurações com esse link de css-->
+    <!-- O site está desconfigurado devido a atualizações de Css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="script.js"></script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="assets/img/Y (1).png" alt="Logo">
+            <img src="assets/img/perfil.png" alt="Imagem Ygor">
+            <h1><span id="nome-digitar"></span></h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div>
+            <nav>
+                <a href="#sobre">Sobre Mim</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+        </div>
     </header>
     <main>
-        <section id="home" class="perfil">
-            <div class="perfil-texto">
-                <h1>Olá, eu sou o<br><span id="nome-digitar"></span></h1>
-                <p>Desenvolvedor Full Stack criando experiências digitais inovadoras.</p>
-            </div>
-            <div class="perfil-img">
-                <img src="assets/img/perfil.png" alt="Foto de Ygor Birochi">
+        <section id="sobre" class="sobre">
+            <div class="">
+                <h2> Desenvolver Full Stack.</h2>
+                <p> Sou apaixonado por criar soluções full stack que <br> 
+                    atendem às necessidades dos usuários de maneira eficaz e escalável </p>
+
+                <p> Tenho experiência no desenvolvimento de interfaces 
+                    front-end robustas e back-end eficientes, sempre buscando entregar  <br> 
+                    produtos com excelente usabilidade e desempenho.</p>
+
+                <p> Trabalhar em todas as camadas da aplicação me permite 
+                    ter uma visão completa do processo de desenvolvimento,<br>
+                    entregando soluções inovadoras e de alta qualidade para os usuários.</p>
             </div>
         </section>
 
-        <section id="sobre" class="sobre animate-on-scroll">
+        <section id="habilidades" class="habilidades">
             <h2>Sobre Mim</h2>
-            <p>Olá! Meu nome é Ygor Birochi da Fonseca Ataniel, sou apaixonado por tecnologia e design.
-            Com experiência em Front-End, Back-End e SQL, ajudo marcas (fictício) a terem uma presença
-            digital impactante. Trabalhei em projetos de Dog Dodoi, Meu Bolso, Passo Certo, Infinity Gym
-            e Jogos, sempre focado na inovação e eficiência.</p>
+            <p> Eu tenho formação técnica em Análise e Desenvolvimento de Sistemas (ADS) pelo SENAI, <br>
+                com habilidades em programação, análise de sistemas e banco de dados. Conheço linguagens <br>
+                como JavaScript e Python, além de metodologias ágeis e desenvolvimento orientado a objetos. <br>
+                Com isso, sou capaz de criar e implementar soluções completas, tanto para sistemas web <br>
+                quanto para automação e otimização de processos, sempre com foco na eficiência e inovação.
+            </p>
+
+            <!-- Colocar icon de htlm, css, js, sql, phyton, responsividade mobile, api e arduino. -->
         </section>
 
         <section id="projetos" class="projetos animate-on-scroll">
-    <h2>Projetos</h2>
-    <div class="carousel-container">
-        <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
-        <div class="carousel">
-            <div class="carousel-track">
-                <figure>
-                    <a href="assets/img/Dog-Dodooi.jpg" target="_blank">
-                        <img src="assets/img/Dog-Dodooi.jpg" alt="Projeto 1">
-                    </a>
-                    <figcaption>
-                        Dog Dodoi
-                        <a href="https://github.com/seu-usuario/dog-dodoi" target="_blank" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
+        <h3>Projetos</h3>
+        <div class="carousel-container">
+            <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="carousel">
+                <div class="carousel-track">
+                    <figure>
+                        <a href="assets/img/Dog-Dodooi.jpg" target="_blank">
+                            <img src="assets/img/Dog-Dodooi.jpg" alt="Projeto 1">
                         </a>
-                    </figcaption>
-                </figure>
+                        <figcaption>
+                            Dog Dodoi
+                            <a href="https://github.com/seu-usuario/dog-dodoi" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </figcaption>
+                    </figure>
 
-                <figure>
-                    <a href="assets/img/Meu-Bolso.jpg" target="_blank">
-                        <img src="assets/img/Meu-Bolso.jpg" alt="Projeto 2">
-                    </a>
-                    <figcaption>
-                        Meu Bolso
-                        <a href="https://github.com/felipeggoncales/SistemaControleFinanceiro" target="_blank" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
+                    <figure>
+                        <a href="assets/img/Meu-Bolso.jpg" target="_blank">
+                            <img src="assets/img/Meu-Bolso.jpg" alt="Projeto 2">
                         </a>
-                    </figcaption>
-                </figure>
+                        <figcaption>
+                            Meu Bolso
+                            <a href="https://github.com/felipeggoncales/SistemaControleFinanceiro" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </figcaption>
+                    </figure>
 
-                <figure>
-                    <a href="assets/img/Passo-Certo.jpg" target="_blank">
-                        <img src="assets/img/Passo-Certo.jpg" alt="Projeto 3">
-                    </a>
-                    <figcaption>
-                        Passo Certo
-                        <a href="https://github.com/AmaralOthavio/PassoCerto-Catalago" target="_blank" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
+                    <figure>
+                        <a href="assets/img/Passo-Certo.jpg" target="_blank">
+                            <img src="assets/img/Passo-Certo.jpg" alt="Projeto 3">
                         </a>
-                    </figcaption>
-                </figure>
+                        <figcaption>
+                            Passo Certo
+                            <a href="https://github.com/AmaralOthavio/PassoCerto-Catalago" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </figcaption>
+                    </figure>
 
-                <figure>
-                    <a href="assets/img/Infinity-Gym.jpg" target="_blank">
-                        <img src="assets/img/Infinity-Gym.jpg" alt="Projeto 4">
-                    </a>
-                    <figcaption>
-                        Infinity Gym
-                        <a href="https://github.com/FelipeGoncales/SiteAcademia" target="_blank" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
+                    <figure>
+                        <a href="assets/img/Infinity-Gym.jpg" target="_blank">
+                            <img src="assets/img/Infinity-Gym.jpg" alt="Projeto 4">
                         </a>
-                    </figcaption>
-                </figure>
+                        <figcaption>
+                            Infinity Gym
+                            <a href="https://github.com/FelipeGoncales/SiteAcademia" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </figcaption>
+                    </figure>
 
-                <figure>
-                    <a href="assets/img/Space-War.jfif" target="_blank">
-                        <img src="assets/img/Space-War.jfif" alt="Projeto 5">
-                    </a>
-                    <figcaption>
-                        Space War
-                        <a href="https://github.com/yguinho/Lista-de-jogo-py" target="_blank" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
+                    <figure>
+                        <a href="assets/img/Space-War.jfif" target="_blank">
+                            <img src="assets/img/Space-War.jfif" alt="Projeto 5">
                         </a>
-                    </figcaption>
-                </figure>
+                        <figcaption>
+                            Space War
+                            <a href="https://github.com/yguinho/Lista-de-jogo-py" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
+            <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
-        <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
-    </div>
-</section>
-
-        
+        <!-- Fazer cards com cada projeto e arruar fotos melhores. -->
+        </section>
+        <!-- Colocar alguma biblioteca de fundo para realssar o site -->
     </main>
     <footer id="contato">
         <div class="social">
             <a href="mailto:ybirochi123456@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://wa.me/5518991889848" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://wa.me/5518991889849" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://www.linkedin.com/in/ygor-birochi-0225a5309/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/YgorBirochi" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>

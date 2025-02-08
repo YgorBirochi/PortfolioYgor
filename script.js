@@ -88,25 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
         escreverTexto();
     }, 800)
 
-    // Parallax no Fundo da Seção "Perfil"
-    window.addEventListener("scroll", () => {
-        const scrollY = window.scrollY;
-        document.querySelector(".perfil::before").style.transform = `translateY(${scrollY * 0.2}px)`;
-    });
-
-    // Efeito nos Projetos ao Passar o Mouse
-    projetos.forEach((projeto) => {
-        projeto.addEventListener("mouseenter", () => {
-            projeto.style.transform = "scale(1.05)";
-            projeto.style.boxShadow = "0px 10px 20px rgba(0, 0, 0, 0.2)";
-        });
-
-        projeto.addEventListener("mouseleave", () => {
-            projeto.style.transform = "scale(1)";
-            projeto.style.boxShadow = "0px 4px 8px rgba(0, 0, 0, 0.1)";
-        });
-    });
-
     // Efeito de Aparição Suave ao Rolar a Página
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
