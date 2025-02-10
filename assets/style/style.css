@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 * {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -26,7 +26,7 @@ header{
     margin: 0 9vw;
     width: 78%;
     position: fixed;
-    
+    padding-top: 10px;
     & .logo{
         display: flex;
         justify-content: center;
@@ -53,11 +53,9 @@ header{
         color: var(--cor-texto);
         transition: color 0.3s ease;
         } 
-    }
-    & a:hover {
+    }   & a:hover {
         color: var(--cor-primaria);
-    }
-    & div{
+    }& div{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -83,7 +81,7 @@ section{
     height: 100vh;
 }
 .sobre{
-    padding-top: 10vh;
+    padding-top: 15vh;
     font-size: 1.2vw;
     & h2{
         font-size: 2.8vw;
@@ -105,18 +103,19 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 30px;
     & span{
         color: var(--cor-primaria);
     }& h2{
         font-size: 2.5vw;
-    }
-    .container-icons{
+    }.container-icons{
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
         padding-top: 12vh;
         & div{
+            width: 120px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -130,14 +129,57 @@ section{
 }
 
 .projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
     & h3{
         font-size: 2.5vw;
     }
-    .container-projetos{
+    & .container-projetos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
         & figure {
-            width: 15vw;
-            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 310px;
+            height: 200px;
             background: var(--cor-secundaria);
+            border-radius: 20px;
+            color: var(--cor-texto-claro);
+            & a img{
+                width: 100%;
+                border-radius: 6px;
+            }
+            & figcaption a i {
+                color: var(--cor-primaria);
+            }
+        }
+    }
+}
+
+footer{
+    background: var(--cor-secundaria);
+    padding: 30px 25px;
+    width: ;
+    & .social{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        & a{
+            color: var(--cor-hover-link);
+            font-size: 2em;
+            transition: all 0.3s ease;
+        }
+        & a:hover{
+            color: var(--cor-primaria);
+            font-size: 2.5em;
         }
     }
 }
