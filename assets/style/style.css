@@ -80,8 +80,64 @@ header{
 }
 section{
     margin: 0 9vw;
-    height: 90vh;
+    height: 100vh;
 }
 .sobre{
-    padding-top: 20vh;
+    padding-top: 10vh;
+    font-size: 1.2vw;
+    & h2{
+        font-size: 2.8vw;
+    }& .container{
+        width:30vw;
+        & div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px
+        }& span{
+            color: var(--cor-primaria)
+        }
+    }
+}
+.habilidades{
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    & span{
+        color: var(--cor-primaria);
+    }& h2{
+        font-size: 2.5vw;
+    }
+    .container-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-top: 12vh;
+        & div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            & i{
+                font-size: 2.5vw;
+                color: var(--cor-primaria);
+            }
+        }
+    }   
+}
+
+.projetos{
+    & h3{
+        font-size: 2.5vw;
+    }
+    .container-projetos{
+        & figure {
+            width: 15vw;
+            height: auto;
+            background: var(--cor-secundaria);
+        }
+    }
 }
