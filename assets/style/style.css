@@ -9,85 +9,103 @@
 
 :root {
     --cor-primaria: #58A6FF;
-    --cor-secundaria: #161B22;
-    --cor-fundo: #f3f3f3;
-    --cor-texto: #0000 ;
-    --cor-texto-claro: #;
-    --cor-backgroud-primaria: # ;
-    --cor-backgroud-secundaria: # ;
-    --cor-header-scroll: rgba(22, 27, 34, 0.98);
-    --cor-hover-link: #d3d3d3;
+    --cor-secundaria: #161b22;
+    --cor-texto: #000000;
+    --cor-bk-projeto: #161B22;
+    --cor-btn-mode-tema: #9fc7f5;
+    --cor-link-contato:#ffffff;
+    --cor-background: #ffffff;
+    --cor-header: #ffffff;
 }
 
-header{
+body.dark-mode {
+    --cor-texto: #c9d1d9;
+    --cor-secundaria: #0d1117;
+    --cor-background: #141414;
+    --cor-header: #0d1117;
+    --cor-bk-projeto: #21262d;
+    --cor-btn-mode-tema: #58A6FF;
+    background-color: var(--cor-background);
+    color: var(--cor-texto);
+}
+
+body {
+    background-color: var(--cor-background);
+    color: var(--cor-texto);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header.movi {
+    background-color: var(--cor-header) !important;
+}
+
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 9vw;
-    width: 78%;
+    padding: 0 5vw;
+    width: 100%;
     position: fixed;
     top: 0;
     padding-top: 10px;
     transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
-
-header.movi {
-    opacity: 1;
-    background-color: #ffff;
-}
-
-& .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    & img{
-        height: 3rem;
-        width: 3rem;
-        border-radius: 100%;
-    }& h1{
-        font-size: 20px;
-        font-weight: 700;
-        transition: color 0.3s ease;
-    }& h1:hover {
-        color: var(--cor-primaria);
-    } 
-}
-
-& nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2vw; 
-    & a{
-    font-size: 17px;
-    font-weight: 500;
-    color: var(--cor-texto);
-    transition: color 0.3s ease;
-    } 
-}   
-
-& a:hover {
-    color: var(--cor-primaria);
-}
-
-& div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding-right: 5px;
-    & i{
-        text-align: center;
-        font-size: 1.2vw;
-        width: 2.5vw;
-        height: 2.5vh;
-        border-radius: 50%; 
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-        background-color: var(--cor-fundo);
-    } & i:hover {
-        background-color: var(--cor-hover-link); 
-        transform: scale(1.1); 
+    &.movi {
+        opacity: 1;
+        background-color: #ffff;
+    }
+    & .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & img {
+            height: 3rem;
+            width: 3rem;
+            border-radius: 100%;
+        }
+        & h1 {
+            font-size: 20px;
+            font-weight: 700;
+            transition: color 0.3s ease;
+            &:hover {
+                color: var(--cor-primaria);
+            }
+        }
+    }
+    & nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        & a {
+            font-size: 17px;
+            font-weight: 500;
+            color: var(--cor-texto);
+            transition: color 0.3s ease;
+            &:hover {
+                color: var(--cor-primaria);
+            }
+        }
+    }
+    & div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-right: 5px;
+        & i {
+            text-align: center;
+            font-size: 1.2vw;
+            width: 2.5vw;
+            height: 2.5vh;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            &:hover {
+                background-color: var(--cor-btn-mode-tema);
+                transform: scale(1.1);
+            }
+        }
     }
 }
 section{
@@ -149,7 +167,6 @@ section{
     align-items: center;
     flex-direction: column;
     gap: 40px;
-    background-color: var(--cor-backgroud-secundaria);
     & h3{
         font-size: 2.5vw;
     }
@@ -166,9 +183,9 @@ section{
             flex-direction: column;
             width: 310px;
             height: 200px;
-            background: var(--cor-secundaria);
+            background: var(--cor-bk-projeto);
             border-radius: 20px;
-            color: var(--cor-texto-claro);
+            color: white;
             & a img{
                 width: 270px;
                 object-fit: cover;
@@ -184,13 +201,12 @@ section{
 footer{
     background: var(--cor-secundaria);
     padding: 30px 25px;
-    width: ;
     & .social{
         display: flex;
         justify-content: center;
         gap: 30px;
         & a{
-            color: var(--cor-hover-link);
+            color: var(--cor-link-contato);
             font-size: 2em;
             transition: all 0.3s ease;
         }
